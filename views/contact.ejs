@@ -1,0 +1,13 @@
+
+    <h1>Hello world</h1>
+    <p>Ini contact page</p>
+    <% if (contacts.length < 1) { %>
+        <p>Contact data is empty</p>
+    <% } else { %>
+    <% contacts.forEach((contact) => { %>
+        <ul>
+            <li> Name: <%= contact.name %> </li> 
+            <li> Mobile: <%= contact.mobile %> </li>
+        </ul>
+    <% }) %>
+    <% } %>
